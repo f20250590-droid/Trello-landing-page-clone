@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello - Capture, organize, and tackle your to-dos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <span class="atlassian-text">Atlassian</span>
+                <a href="#" class="logo">
+                    <div class="logo-icon">▦</div>
+                    <span>Trello</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-login">Log in</button>
+                <button class="btn btn-signup">Get Trello for free</button>
+            </div>
+            <div class="hamburger" id="navHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu" id="navMenu">
+            <a href="#features">Features</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#plans">Plans</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#resources">Resources</a>
+            <button class="btn btn-login">Log in</button>
+            <button class="btn btn-signup">Get Trello for free</button>
+        </div>
+    </header>
+
+    <div class="banner">
+        <p class="banner-text">
+            Accelerate your teams' work with Atlassian Intelligence (AI) features 🧠 now available for all Premium and Enterprise! 
+            <a href="#" class="banner-link">Learn more.</a>
+        </p>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text" style="margin-top: 40px; margin-left: 20px;">
+                <h1>Capture, organize, and tackle your to-dos from anywhere.</h1>
+                <p>Escape the clutter and chaos—unleash your productivity with Trello.</p>
+                
+                <form class="signup-form" id="heroForm">
+                    <input type="email" class="email-input" placeholder="Email" required>
+                    <button type="submit" class="btn-submit">Sign up - it's free!</button>
+                </form>
+                
+                <p class="privacy-text">
+                    By entering my email, I acknowledge the <a href="#" class="privacy-link">Atlassian Privacy Policy</a>
+                </p>
+                
+                <a href="#" class="video-link">
+                    <span class="play-icon">▶</span>
+                    Watch video
+                </a>
+            </div>
+
+            <div class="hero-video">
+                <div class="video-container">
+                    <video id="heroVid" autoplay muted playsinline>
+                        <source src="hero-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trello-101" id="features">
+        <div class="section-container">
+            <p class="section-label">TRELLO 101</p>
+            <h2 class="section-title">Your productivity powerhouse</h2>
+            <p class="section-description">Stay organized and efficient with Inbox, Boards, and Planner. Every to-do, idea, or responsibility—no matter how small—finds its place, keeping you at the top of your game.</p>
+            
+            <div class="features-grid">
+                <div class="feature-list">
+                    <div class="feature-item active" data-feature="inbox">
+                        <h3>Inbox</h3>
+                        <p>When it's on your mind, it goes in your Inbox. Capture your to-dos from anywhere, anytime.</p>
+                    </div>
+                    <div class="feature-item" data-feature="boards">
+                        <h3>Boards</h3>
+                        <p>Your to-do list may be long, but it can be manageable! Keep tabs on everything from "to-dos to tackle" to "mission accomplished!"</p>
+                    </div>
+                    <div class="feature-item" data-feature="planner">
+                        <h3>Planner</h3>
+                        <p>Drag, drop, get it done. Snap your top tasks into your calendar and make time for what truly matters.</p>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="inbox-column">
+                        <h4>📥 Inbox</h4>
+                        <input type="text" class="inbox-input" placeholder="Add a todo, or use / for actions">
+                        <div class="inbox-card-white">Marketing presentation got moved up to Friday</div>
+                        <div class="inbox-card-white">Your stay in Austin</div>
+                        <div class="inbox-card-white">Project poster</div>
+                    </div>
+                    <div class="board-column">
+                        <h4>Personal Task Board</h4>
+                        <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+                            <strong>To Do - Today</strong>
+                        </div>
+                        <div class="board-card">Prepare analysis of recent campaigns</div>
+                        <div class="board-card">Create brief and write test instructions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blue-section">
+        <div class="section-container">
+            <h2 class="section-title">From message to action</h2>
+            <p class="section-description">Quickly turn communication from your favorite apps into to-dos, keeping all your discussions and tasks organized in one place.</p>
+            
+            <div class="integration-showcase">
+                <div>
+                    <div class="email-card">
+                        <span class="email-to">To: INBOX@TRELLO.COM</span>
+                        <p><strong>From:</strong> bookings@acmehotel.com</p>
+                        <p><strong>Date:</strong> Tue, April 9 at 10:06 AM</p>
+                        <p><strong>Subject:</strong> Hotel - BOOKED - Fairmont Austin</p>
+                    </div>
+                    <div style="text-align: center; margin: 20px 0; font-size: 32px;">✉️ → 📥</div>
+                    <div class="inbox-column" style="max-width: 400px;">
+                        <h4>📥 Inbox</h4>
+                        <div class="inbox-card-white">Your stay in Austin</div>
+                        <div class="inbox-card-white">✅ Book team dinner</div>
+                    </div>
+                </div>
+                <div class="integration-text">
+                    <h3>EMAIL MAGIC</h3>
+                    <h2>Easily turn your emails into to-dos!</h2>
+                    <p>Just forward them to your Trello Inbox, and they'll be transformed by Atlassian Intelligence (AI) into organized to-dos with all the links you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-smarter">
+        <div class="section-container">
+            <p class="section-label">WORK SMARTER</p>
+            <h2 class="section-title">Do more with Trello</h2>
+            <p class="section-description">Customize the way you organize with easy integrations, automation, and mirroring of your to-dos across multiple locations.</p>
+            
+            <div class="features-cards">
+                <div class="feature-card">
+                    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: 24px;">
+                        <rect width="25" height="25" fill="#5243AA"/>
+                        <rect x="30" width="25" height="25" fill="#0079BF"/>
+                    </svg>
+                    <h3>Integrations</h3>
+                    <p>Connect the apps you are already using into your Trello workflow or add a Power-Up to fine-tune your specific needs.</p>
+                    <a href="#" class="feature-link">Browse Integrations</a>
+                </div>
+                <div class="feature-card">
+                    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: 24px;">
+                        <circle cx="30" cy="30" r="15" fill="#5243AA"/>
+                        <circle cx="40" cy="20" r="10" fill="#0079BF"/>
+                    </svg>
+                    <h3>Automation</h3>
+                    <p>No-code automation is built into every Trello board. Focus on the work that matters most and let the robots do the rest.</p>
+                    <a href="#" class="feature-link">Get to know Automation</a>
+                </div>
+                <div class="feature-card">
+                    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: 24px;">
+                        <rect width="20" height="35" rx="5" fill="#FFA500"/>
+                        <rect x="25" width="20" height="35" rx="5" fill="#9B59B6"/>
+                    </svg>
+                    <h3>Card mirroring</h3>
+                    <p>View all your to-dos from multiple boards in one place. Mirror a card to keep track of work wherever you need it!</p>
+                    <a href="#" class="feature-link">Compare plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="testimonial-container">
+            <div>
+                <p class="testimonial-quote">"[Trello is] great for simplifying complex processes. As a manager, I can chunk [processes] down into bite-sized pieces for my team and then delegate that out, but still keep a bird's-eye view."</p>
+                <p style="margin-bottom: 8px; color: #5e6c84;"><strong>Joey Rosenberg</strong></p>
+                <p style="color: #5e6c84;">Global Leadership Director at Women Who Code</p>
+                <div style="margin-top: 24px; font-weight: bold; font-size: 14px; letter-spacing: 1px; color: #172b4d;">
+                    WOMEN WHO CODE
+                </div>
+                <a href="#" style="color: #0052cc; text-decoration: none; font-weight: 500; margin-top: 16px; display: inline-block;">Read the story</a>
+            </div>
+            <div class="stat-box">
+                <h2>75% of organizations report that Trello delivers value to their business within 30 days.</h2>
+                <a href="#" style="color: white; text-decoration: none; font-weight: 500; border-bottom: 2px solid white; display: inline-block;">Trello TechValidate Survey</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="logos-section">
+        <div class="section-container">
+            <p class="logos-text">Join a community of millions of users globally who are using Trello to get more done.</p>
+            <div class="logos-grid">
+                <div class="logo-item">VISA</div>
+                <div class="logo-item">coinbase</div>
+                <div class="logo-item" style="font-size: 20px;">🚜 JOHN DEERE</div>
+                <div class="logo-item">zoom</div>
+                <div class="logo-item">GRAND HYATT</div>
+                <div class="logo-item" style="font-family: cursive;">Fender</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="section-container">
+            <h2>Get started with Trello today</h2>
+            <form class="cta-form" id="ctaForm">
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Sign up - it's free!</button>
+            </form>
+            <p class="privacy-text" style="margin-top: 16px;">By entering my email, I acknowledge the <a href="#" class="privacy-link">Atlassian Privacy Policy</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">▦</div>
+                        <span style="font-size: 24px; font-weight: 600;">Trello</span>
+                    </div>
+                    <a href="#" style="color: white; text-decoration: none; font-size: 14px;">Log In</a>
+                </div>
+                <div class="footer-column">
+                    <h4>About Trello</h4>
+                    <a href="#">What's behind the boards.</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Jobs</h4>
+                    <a href="#">Learn about open roles on the Trello team.</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Apps</h4>
+                    <a href="#">Download the Trello App for your Desktop or Mobile devices.</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact us</h4>
+                    <a href="#">Need anything? Get in touch and we can help.</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 8px; color: white; font-size: 14px;">
+                        <span>🌐</span>
+                        <span>English</span>
+                        <span>▼</span>
+                    </div>
+                    <div style="display: flex; gap: 24px; font-size: 12px;">
+                        <a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Privacy Policy</a>
+                        <a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Terms</a>
+                        <span style="color: rgba(255,255,255,0.5);">Copyright © 2024 Atlassian</span>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">▶</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
