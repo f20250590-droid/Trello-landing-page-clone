@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <header>
@@ -19,17 +19,295 @@
                     <span>Trello</span>
                 </a>
             </div>
+            
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#plans">Plans</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#resources">Resources</a></li>
+                <li class="nav-item" data-dropdown="features">
+                    <button class="nav-dropdown-toggle">
+                        Features
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu"> 
+                        <div class="dropdown-content-wrapper">
+                            <div class="dropdown-layout">
+                                <div>
+                                    <div class="dropdown-header">Work Smarter, Together</div>
+                                    
+                                    <div class="dropdown-section">
+                                        <h4 class="dropdown-group-title">TRELLO VIEWS</h4>
+                                        <div class="dropdown-grid views-grid">
+                                            <a href="#" class="dropdown-item">
+                                                <svg aria-hidden="true" viewBox="0 0 48 48" fill="currentColor"><path d="M31 21L17 21L17 17L31 17V21Z"></path><path fill-rule="evenodd" d="M10 10V38H38V10H10ZM34 14H14V24H18C18 27.3137 20.6863 30 24 30C27.3137 30 30 27.3137 30 24H34V14Z"></path></svg>
+                                                <div>
+                                                    <h3>Inbox</h3>
+                                                    <p>Capture every vital detail from emails, Slack, and more directly into your Trello Inbox.</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="dropdown-item-icon view-icon">📊</span>
+                                                <div>
+                                                    <h3>Dashboard View</h3>
+                                                    <p>See real-time metrics and monitor progress with summary charts.</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="dropdown-item-icon view-icon">🌍</span>
+                                                <div>
+                                                    <h3>Map View</h3>
+                                                    <p>Visualize location-based projects with cards on a map.</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="dropdown-item-icon view-icon">🧑‍💻</span>
+                                                <div>
+                                                    <h3>Workspace Table View</h3>
+                                                    <p>Turn cards into a powerful table across multiple boards.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="dropdown-section" style="margin-top: 32px;">
+                                        <h4 class="dropdown-group-title">TOP FEATURES</h4>
+                                        <div class="dropdown-grid core-grid">
+                                            <a href="#" class="dropdown-item">
+                                                <span class="dropdown-item-icon">⚡</span>
+                                                <div>
+                                                    <h3>Automation</h3>
+                                                    <p>Automate tasks and workflows with Trello.</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="dropdown-item-icon">🔌</span>
+                                                <div>
+                                                    <h3>Power-Ups</h3>
+                                                    <p>Extend functionality with integrations and Power-Ups.</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                <span class="dropdown-item-icon">📋</span>
+                                                <div>
+                                                    <h3>Templates</h3>
+                                                    <p>Get a blueprint for success from industry leaders.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-sidebar">
+                                    <div class="dropdown-sidebar-content">
+                                        <h3>Meet Trello</h3>
+                                        <p>Trello makes it easy for your team to get work done. No matter the project, workflow, or type of team, Trello can keep things organized. It's simple—you just create a board, and you're off! Productivity awaits.</p>
+                                        <a href="#">Check out Trello</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item" data-dropdown="solutions">
+                    <button class="nav-dropdown-toggle">
+                        Solutions
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content-wrapper">
+                            <div class="dropdown-layout">
+                                <div>
+                                    <div class="dropdown-header">Take a page out of these pre-built Trello playbooks designed for all teams</div>
+                                    <div class="dropdown-grid solutions-grid" style="grid-template-columns: repeat(2, 1fr);">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">📢</span>
+                                            <div>
+                                                <h3>Marketing teams</h3>
+                                                <p>Whether launching a new product, campaign, or creating content, Trello helps marketing teams succeed.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">📦</span>
+                                            <div>
+                                                <h3>Product management</h3>
+                                                <p>Use Trello's management boards and roadmap features to simplify complex projects and processes.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">💻</span>
+                                            <div>
+                                                <h3>Engineering teams</h3>
+                                                <p>Ship more code, faster, and give your developers the freedom to be more agile with Trello.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">✏️</span>
+                                            <div>
+                                                <h3>Design teams</h3>
+                                                <p>Keep your design teams using Trello to streamline creative requests and promote more fluid cross-team collaboration.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">🚀</span>
+                                            <div>
+                                                <h3>Startups</h3>
+                                                <p>From hitting revenue goals to managing workflows, small businesses thrive with Trello.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">🌐</span>
+                                            <div>
+                                                <h3>Remote teams</h3>
+                                                <p>Keep your remote team connected and motivated, no matter where they're located around the world.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-footer">
+                                        <a href="#">See all teams →</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-sidebar">
+                                    <div class="dropdown-sidebar-content">
+                                        <h3>Our product in action</h3>
+                                        <a href="#" style="padding: 0; background: none; display: block; border: none; margin-bottom: 20px;">
+                                            <span style="font-size: 16px; font-weight: 600; color: #172b4d; display: block;">Use case: Task management</span>
+                                            <p style="margin-top: 4px; font-size: 14px; color: #5e6c84;">Track progress of tasks in one convenient place with a visual layout that adds "to-do" to your to-do's.</p>
+                                        </a>
+                                        <a href="#" style="padding: 0; background: none; display: block; border: none; margin-bottom: 20px;">
+                                            <span style="font-size: 16px; font-weight: 600; color: #172b4d; display: block;">Use case: Resource hub</span>
+                                            <p style="margin-top: 4px; font-size: 14px; color: #5e6c84;">Save hours when you give teams a well-designed hub to find information easily and quickly.</p>
+                                        </a>
+                                        <a href="#" style="padding: 0; background: none; display: block; border: none; margin-bottom: 20px;">
+                                            <span style="font-size: 16px; font-weight: 600; color: #172b4d; display: block;">Use case: Project management</span>
+                                            <p style="margin-top: 4px; font-size: 14px; color: #5e6c84;">Keep projects organized, deadlines on track, and teammates aligned with Trello.</p>
+                                        </a>
+                                        <div class="dropdown-footer" style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #dfe1e6;">
+                                            <a href="#">See all use cases →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item" data-dropdown="plans">
+                    <button class="nav-dropdown-toggle">
+                        Plans
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu"> 
+                        <div class="dropdown-content-wrapper">
+                            <div class="dropdown-layout" style="grid-template-columns: 2fr 1fr; gap: 40px;">
+                                <div>
+                                    <div class="dropdown-grid plans-list" style="grid-template-columns: 1fr;">
+                                        <a href="#" class="dropdown-item plans-item">
+                                            <h3>Standard</h3>
+                                            <p>For teams that need to manage more work and scale collaboration.</p>
+                                        </a>
+                                        <a href="#" class="dropdown-item plans-item">
+                                            <h3>Premium</h3>
+                                            <p>Best for teams up to 100 that need to track multiple projects and visualize work in a variety of ways.</p>
+                                        </a>
+                                        <a href="#" class="dropdown-item plans-item">
+                                            <h3>Enterprise</h3>
+                                            <p>Everything your enterprise teams and admins need to manage projects.</p>
+                                        </a>
+                                        <a href="#" class="dropdown-item plans-item" style="border-top: 1px solid #e6e6e6; margin-top: 8px;">
+                                            <h3>Free plan</h3>
+                                            <p>For individuals or small teams looking to keep work organized.</p>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-footer" style="padding-top: 16px;">
+                                        <a href="#">Compare plans & pricing →</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-sidebar">
+                                    <div class="dropdown-sidebar-content">
+                                        <h3>Compare plans & pricing</h3>
+                                        <p>Whether you're a team of 2 or 2,000, Trello's flexible pricing model means you only pay for what you need.</p>
+                                        <a href="#" style="background: #0052cc; color: white;">View Trello pricing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#">Pricing</a>
+                </li>
+
+                <li class="nav-item" data-dropdown="resources">
+                    <button class="nav-dropdown-toggle">
+                        Resources
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content-wrapper">
+                            <div class="dropdown-layout">
+                                <div>
+                                    <div class="dropdown-header">Learn & connect</div>
+                                    <div class="dropdown-grid core-grid">
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">📖</span>
+                                            <div>
+                                                <h3>Trello guide</h3>
+                                                <p>Our easy to follow workflow guide will take you from project set-up to Trello expert in no time.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">🏠</span>
+                                            <div>
+                                                <h3>Remote work guide</h3>
+                                                <p>The complete guide to setting up your team for remote work success.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">🎥</span>
+                                            <div>
+                                                <h3>Webinars</h3>
+                                                <p>Enjoy our free Trello webinars and become a productivity professional.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">💬</span>
+                                            <div>
+                                                <h3>Customer stories</h3>
+                                                <p>See how businesses have adopted Trello as a vital part of their workflow.</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">👨‍💻</span>
+                                            <div>
+                                                <h3>Developers</h3>
+                                                <p>The sky's the limit in what you can deliver to Trello users in your Power-Up!</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <span class="dropdown-item-icon">❓</span>
+                                            <div>
+                                                <h3>Help resources</h3>
+                                                <p>Need help? Articles and FAQs to get you unstuck.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-sidebar">
+                                    <div class="dropdown-sidebar-content">
+                                        <h3>Helping teams work better, together</h3>
+                                        <p>Discover Trello use cases, productivity tips, best practices for team collaboration, and expert remote work advice.</p>
+                                        <a href="#">Check out the Trello blog</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
+
             <div class="nav-buttons">
                 <button class="btn btn-login">Log in</button>
                 <button class="btn btn-signup">Get Trello for free</button>
             </div>
+
             <div class="hamburger" id="navHamburger">
                 <span></span>
                 <span></span>
@@ -37,19 +315,22 @@
             </div>
         </nav>
         <div class="mobile-menu" id="navMenu">
-            <a href="#features">Features</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#plans">Plans</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#resources">Resources</a>
+            <a href="#">Features</a>
+            <a href="#">Solutions</a>
+            <a href="#">Plans</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
             <button class="btn btn-login">Log in</button>
             <button class="btn btn-signup">Get Trello for free</button>
         </div>
     </header>
 
+    <div class="dropdown-overlay" id="dropdownOverlay"></div>
+
+
     <div class="banner">
         <p class="banner-text">
-            Accelerate your teams' work with Atlassian Intelligence (AI) features 🧠 now available for all Premium and Enterprise! 
+            Accelerate your teams' work with Atlassian Intelligence (AI) features 🤖 now available for all Premium and Enterprise! 
             <a href="#" class="banner-link">Learn more.</a>
         </p>
     </div>
@@ -83,8 +364,6 @@
                     </video>
                     <div class="video-overlay"></div>
                 </div>
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
             </div>
         </div>
     </section>
@@ -111,22 +390,21 @@
                     </div>
                 </div>
                 <div class="feature-visual">
-                    <div class="inbox-column">
-                        <h4>📥 Inbox</h4>
-                        <input type="text" class="inbox-input" placeholder="Add a todo, or use / for actions">
-                        <div class="inbox-card-white">Marketing presentation got moved up to Friday</div>
-                        <div class="inbox-card-white">Your stay in Austin</div>
-                        <div class="inbox-card-white">Project poster</div>
-                    </div>
-                    <div class="board-column">
-                        <h4>Personal Task Board</h4>
-                        <div style="background: rgba(255,255,255,0.2); padding: 12px; border-radius: 8px; margin-bottom: 12px;">
-                            <strong>To Do - Today</strong>
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <img src="feature1.png" alt="Inbox Feature">
+                            <img src="feature2.png" alt="Boards Feature">
+                            <img src="feature3.png" alt="Planner Feature">
                         </div>
-                        <div class="board-card">Prepare analysis of recent campaigns</div>
-                        <div class="board-card">Create brief and write test instructions</div>
                     </div>
-                </div>
+                    <div class="carousel-controls">
+                        <div class="carousel-dots">
+                            <button class="dot active"></button>
+                            <button class="dot"></button>
+                            <button class="dot"></button>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -137,25 +415,27 @@
             <p class="section-description">Quickly turn communication from your favorite apps into to-dos, keeping all your discussions and tasks organized in one place.</p>
             
             <div class="integration-showcase">
-                <div>
-                    <div class="email-card">
-                        <span class="email-to">To: INBOX@TRELLO.COM</span>
-                        <p><strong>From:</strong> bookings@acmehotel.com</p>
-                        <p><strong>Date:</strong> Tue, April 9 at 10:06 AM</p>
-                        <p><strong>Subject:</strong> Hotel - BOOKED - Fairmont Austin</p>
+                
+                <div class="feature-block">
+                    <div class="feature-image">
+                        <img src="email1.png" alt="Email to Trello example">
                     </div>
-                    <div style="text-align: center; margin: 20px 0; font-size: 32px;">✉️ → 📥</div>
-                    <div class="inbox-column" style="max-width: 400px;">
-                        <h4>📥 Inbox</h4>
-                        <div class="inbox-card-white">Your stay in Austin</div>
-                        <div class="inbox-card-white">✅ Book team dinner</div>
+                    <div class="feature-text">
+                        <h3>EMAIL MAGIC</h3>
+                        <p>Easily turn your emails into to-dos! Just forward them to your Trello Inbox, and they’ll be transformed by Atlassian Intelligence (AI) into organized to-dos with all the links you need.</p>
                     </div>
                 </div>
-                <div class="integration-text">
-                    <h3>EMAIL MAGIC</h3>
-                    <h2>Easily turn your emails into to-dos!</h2>
-                    <p>Just forward them to your Trello Inbox, and they'll be transformed by Atlassian Intelligence (AI) into organized to-dos with all the links you need.</p>
+
+                <div class="feature-block">
+                    <div class="feature-text">
+                        <h3>MESSAGE APP SORCERY</h3>
+                        <p>Need to follow up on a message from Slack or Microsoft Teams? Send it directly to your Trello board! Your favorite app interface lets you save messages that appear in your Trello Inbox with AI-generated summaries and links.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="email2.png" alt="Message app to Trello example">
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -168,28 +448,19 @@
             
             <div class="features-cards">
                 <div class="feature-card">
-                    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: 24px;">
-                        <rect width="25" height="25" fill="#5243AA"/>
-                        <rect x="30" width="25" height="25" fill="#0079BF"/>
-                    </svg>
+                    <img src="1.svg">
                     <h3>Integrations</h3>
                     <p>Connect the apps you are already using into your Trello workflow or add a Power-Up to fine-tune your specific needs.</p>
                     <a href="#" class="feature-link">Browse Integrations</a>
                 </div>
                 <div class="feature-card">
-                    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: 24px;">
-                        <circle cx="30" cy="30" r="15" fill="#5243AA"/>
-                        <circle cx="40" cy="20" r="10" fill="#0079BF"/>
-                    </svg>
+                    <img src="2.svg">
                     <h3>Automation</h3>
                     <p>No-code automation is built into every Trello board. Focus on the work that matters most and let the robots do the rest.</p>
                     <a href="#" class="feature-link">Get to know Automation</a>
                 </div>
                 <div class="feature-card">
-                    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-bottom: 24px;">
-                        <rect width="20" height="35" rx="5" fill="#FFA500"/>
-                        <rect x="25" width="20" height="35" rx="5" fill="#9B59B6"/>
-                    </svg>
+                    <img src="2.svg">
                     <h3>Card mirroring</h3>
                     <p>View all your to-dos from multiple boards in one place. Mirror a card to keep track of work wherever you need it!</p>
                     <a href="#" class="feature-link">Compare plans</a>
@@ -220,12 +491,7 @@
         <div class="section-container">
             <p class="logos-text">Join a community of millions of users globally who are using Trello to get more done.</p>
             <div class="logos-grid">
-                <div class="logo-item">VISA</div>
-                <div class="logo-item">coinbase</div>
-                <div class="logo-item" style="font-size: 20px;">🚜 JOHN DEERE</div>
-                <div class="logo-item">zoom</div>
-                <div class="logo-item">GRAND HYATT</div>
-                <div class="logo-item" style="font-family: cursive;">Fender</div>
+                <img src="logos.svg">
             </div>
         </div>
     </section>
@@ -249,7 +515,7 @@
                         <div class="footer-logo-icon">▦</div>
                         <span style="font-size: 24px; font-weight: 600;">Trello</span>
                     </div>
-                    <a href="#" style="color: white; text-decoration: none; font-size: 14px;">Log In</a>
+                    <a href="#" class="footer-login-link">Log In</a>
                 </div>
                 <div class="footer-column">
                     <h4>About Trello</h4>
@@ -269,16 +535,16 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
-                    <div style="display: flex; align-items: center; gap: 8px; color: white; font-size: 14px;">
+                <div class="footer-meta-group">
+                    <div class="footer-language">
                         <span>🌐</span>
                         <span>English</span>
                         <span>▼</span>
                     </div>
-                    <div style="display: flex; gap: 24px; font-size: 12px;">
-                        <a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Privacy Policy</a>
-                        <a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Terms</a>
-                        <span style="color: rgba(255,255,255,0.5);">Copyright © 2024 Atlassian</span>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms</a>
+                        <span class="footer-copyright">Copyright © 2024 Atlassian</span>
                     </div>
                 </div>
                 <div class="social-icons">
@@ -292,6 +558,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
 </html>
