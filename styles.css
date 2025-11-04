@@ -1,3 +1,4 @@
+/* --- Global Styles and Variables --- */
 * {
     margin: 0;
     padding: 0;
@@ -10,17 +11,19 @@ body {
     color: #172b4d;
 }
 
+/* Define variables for consistent alignment */
 :root {
     --nav-padding-x: 24px;
     --max-content-width: 1280px;
 }
 
+/* Header Styles */
 header {
     background: white;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    z-index: 102; 
+    z-index: 102; /* Ensures header is above the dropdown (101) */
 }
 
 .banner {
@@ -53,9 +56,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: var(--max-content-width); 
+    max-width: var(--max-content-width); /* Constrain the main nav content */
     margin: 0 auto;
-    
+    /* Use the variable for consistent horizontal padding */
     padding: 12px var(--nav-padding-x); 
 }
 
@@ -133,37 +136,39 @@ nav {
     background: #f4f5f7;
 }
 
+/* --- Dropdown Menu Styles (FULL WIDTH FIX) --- */
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    
+    /* Key for full width: Stretch to entire viewport */
     left: 0;
     right: 0;
     
     background: white;
-    
+    /* Only round the bottom corners */
     border-radius: 0 0 8px 8px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.22);
-    padding: 0; 
+    padding: 0; /* Content padding is now handled by the wrapper */
     display: none;
-    margin-top: 0; 
+    margin-top: 0; /* Attach directly to the nav bottom */
     z-index: 101; 
-    border-top: 1px solid #e6e6e6; 
-    min-width: unset; 
+    border-top: 1px solid #e6e6e6; /* Separator from nav */
+    min-width: unset; /* Override previous fixed width */
 }
 
 .nav-item.active .dropdown-menu {
     display: block;
 }
 
+/* **THE ALIGNMENT FIX** - Content Wrapper to constrain content and center it */
 .dropdown-content-wrapper {
-    
+    /* Calculate max width: Main content width + (2 * Nav padding) */
     max-width: calc(var(--max-content-width) + (2 * var(--nav-padding-x))); 
     
-    
+    /* Auto margins center the block element, aligning it to the center of the viewport */
     margin: 0 auto; 
     
-    
+    /* Use the nav's padding here to align the inner content with the nav's inner content edges */
     padding: 32px var(--nav-padding-x) 40px; 
 }
 
@@ -175,17 +180,20 @@ nav {
     font-weight: 600;
 }
 
+/* NEW: Layout for menus with a sidebar */
 .dropdown-layout {
     display: grid;
-    grid-template-columns: 3fr 1.5fr; 
+    grid-template-columns: 3fr 1.5fr; /* Adjusted ratio for a more prominent main content */
     gap: 40px;
 }
 
+/* Base grid for the link items */
 .dropdown-grid {
     display: grid;
-    gap: 24px 20px; 
+    gap: 24px 20px; /* Vertical and horizontal gap */
 }
 
+/* Specific grids for Features/Solutions (for example) */
 .views-grid {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -199,6 +207,7 @@ nav {
 }
 
 
+/* Dropdown Item styles (UPDATED FOR FLEX LAYOUT) */
 .dropdown-item {
     padding: 12px 16px; 
     border-radius: 6px;
@@ -214,6 +223,7 @@ nav {
     background: #f4f5f7;
 }
 
+/* Icon styling for the visual effect */
 .dropdown-item-icon {
     font-size: 24px; 
     margin-bottom: 0; 
@@ -231,7 +241,7 @@ nav {
     font-size: 18px; 
     color: #172b4d;
     margin-bottom: 4px;
-    font-weight: 600; 
+    font-weight: 600; /* Bolder heading */
 }
 
 .dropdown-item p {
@@ -240,6 +250,7 @@ nav {
     line-height: 1.4;
 }
 
+/* Header for group titles within a dropdown */
 .dropdown-group-title {
     font-size: 12px;
     color: #5e6c84;
@@ -250,6 +261,7 @@ nav {
     padding-left: 16px; 
 }
 
+/* Plans Item - Overrides the icon/flex style */
 .plans-item {
     align-items: flex-start;
     gap: 0;
@@ -286,10 +298,11 @@ nav {
     text-decoration: underline;
 }
 
+/* Sidebar for Resources, Features, Plans */
 .dropdown-sidebar {
     background: #f4f5f7;
     border-radius: 8px;
-    padding: 32px; 
+    padding: 32px; /* Increased padding */
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -326,6 +339,7 @@ nav {
     background: #e6e6e6;
 }
 
+/* Nav Button and Overlay Styles */
 .nav-buttons {
     display: flex;
     gap: 12px;
@@ -363,6 +377,7 @@ nav {
     background: #0065ff;
 }
 
+/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -441,6 +456,7 @@ nav {
     margin: 12px 0;
 }
 
+/* Hero Section */
 .hero {
     background: #f5f6f8;
     padding: 80px var(--nav-padding-x);
@@ -455,9 +471,9 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: center;
-    
-    padding-left: 60px; 
-    padding-right: 0; 
+    /* Adjust padding to align with the nav container */
+    padding-left: 60px; /* This was a custom style, keeping it */
+    padding-right: 0; /* Handled by the container's padding */
 }
 
 .hero-text h1 {
@@ -554,6 +570,7 @@ nav {
     color: white;
 }
 
+/* Hero Video Section */
 .hero-video {
     position: relative;
     perspective: 1000px;
@@ -581,6 +598,7 @@ nav {
     pointer-events: none;
 }
 
+/* Trello 101 Section */
 .trello-101 {
     padding: 80px var(--nav-padding-x);
     background: white;
@@ -653,6 +671,7 @@ nav {
     line-height: 1.5;
 }
 
+/* Feature Visual/Carousel */
 .feature-visual {
     background: #f4f5f7;
     border-radius: 8px;
@@ -670,11 +689,13 @@ nav {
     border-radius: 8px;
 }
 
+/* Track that slides */
 .carousel-track {
     display: flex;
-    transition: transform 0.5s ease-out; 
+    transition: transform 0.5s ease-out; /* Keep a smooth slide transition */
 }
 
+/* Each slide image */
 .carousel-track img {
     min-width: 100%;
     height: auto;
@@ -682,8 +703,9 @@ nav {
     border-radius: 8px;
 }
 
+/* Carousel Dots Styles */
 .carousel-controls {
-    margin-top: 32px; 
+    margin-top: 32px; /* Space between carousel image and dots */
     text-align: center;
 }
 
@@ -696,7 +718,7 @@ nav {
 .dot {
     width: 10px;
     height: 10px;
-    background: #dfe1e6; 
+    background: #dfe1e6; /* Inactive color */
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -706,17 +728,18 @@ nav {
 }
 
 .dot.active {
-    background: #0052cc; 
+    background: #0052cc; /* Active color */
     width: 12px;
     height: 12px;
     transform: scale(1.1);
 }
 
 
+/* Blue Section */
 .blue-section {
     background: #0052cc;
-    padding: 80px 40px; 
-    
+    padding: 80px 40px; /* Using a fallback padding */
+    /* padding: 80px var(--nav-padding-x); */ /* Your original padding is fine too */
     color: white;
 }
 
@@ -730,15 +753,23 @@ nav {
     color: rgba(255,255,255,0.9);
     text-align: center;
     margin: 0 auto 60px;
-    max-width: 600px; 
+    max-width: 600px; /* Good practice for centered text */
 }
 
+/* --- NEW/MODIFIED STYLES --- */
+
+/* MODIFIED: This class is now a flex container that stacks
+  the two feature-blocks vertically and adds space between them.
+*/
 .integration-showcase {
     display: flex;
     flex-direction: column;
-    gap: 40px; 
+    gap: 40px; /* This creates space BETWEEN the two white boxes */
 }
 
+/* NEW: This is the style for EACH of the two white boxes.
+  This is where the 2-column grid layout is defined.
+*/
 .feature-block {
     background: white;
     border-radius: 12px;
@@ -747,9 +778,11 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    color: #172b4d; 
+    color: #172b4d; /* Reset color for white box content */
 }
 
+/* MODIFIED: Styles now apply to the new .feature-text class 
+*/
 .feature-text h3 {
     font-size: 14px;
     color: #5e6c84;
@@ -764,13 +797,22 @@ nav {
     margin: 0;
 }
 
+/* MODIFIED: Renamed from .intimg img to .feature-image img
+  and made responsive.
+*/
 .feature-image img {
-    width: 100%; 
+    width: 100%; /* Makes the image fit its grid column */
     height: auto;
     display: block;
     border-radius: 8px;
 }
 
+/* NOTE: All your other CSS (.email-card, .inbox-column, etc.) 
+  was not used in the HTML you provided, so I've left it out here. 
+  You can keep it in your file if it's for other parts of the page.
+*/
+
+/* Work Smarter Section */
 .work-smarter {
     background: white;
     padding: 80px var(--nav-padding-x);
@@ -806,6 +848,7 @@ nav {
     display: inline-block;
 }
 
+/* Testimonial Section */
 .testimonial {
     background: #f4f5f7;
     padding: 80px var(--nav-padding-x);
@@ -840,6 +883,7 @@ nav {
     margin-bottom: 24px;
 }
 
+/* Logos Section */
 .logos-section {
     background: white;
     padding: 80px var(--nav-padding-x);
@@ -852,6 +896,7 @@ nav {
     margin-bottom: 40px;
 }
 
+/* CTA Section */
 .cta-section {
     background: #f4f5f7;
     padding: 80px var(--nav-padding-x);
@@ -890,6 +935,7 @@ nav {
     cursor: pointer;
 }
 
+/* Footer */
 footer {
     background: #172b4d;
     color: white;
@@ -995,6 +1041,7 @@ footer {
     color: white;
 }
 
+/* Responsive */
 @media (max-width: 1024px) {
     .hero-content,
     .integration-showcase,
@@ -1010,6 +1057,7 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    /* On medium screens, let the full-width dropdown take full width, content stays centered */
     .dropdown-layout {
         grid-template-columns: 1fr;
     }
@@ -1038,7 +1086,7 @@ footer {
     }
     
     .hero-content {
-        padding-left: 0; 
+        padding-left: 0; /* Remove custom padding on mobile */
     }
 
     .signup-form,
@@ -1047,12 +1095,13 @@ footer {
     }
     
     .dropdown-menu {
-        
+        /* On mobile, full-width dropdowns behave like a standard mobile menu */
         border-radius: 0;
         box-shadow: none;
         border-top: 1px solid #e6e6e6;
     }
     
+    /* Revert to simple padding on small screens as nav padding also changes */
     .dropdown-content-wrapper {
         max-width: 100%;
         padding: 24px; 
@@ -1075,12 +1124,13 @@ footer {
         gap: 20px;
     }
 
+    /* Integration Section Mobile Refinements */
     .integration-showcase {
         padding: 24px; 
     }
     
     .integration-text {
-        order: -1; 
+        order: -1; /* Move the text content above the visuals on mobile */
         text-align: center;
     }
     
@@ -1099,11 +1149,11 @@ footer {
     }
     
     .date {
-        align-self: flex-end; 
+        align-self: flex-end; /* Keep the date in a logical spot */
     }
     
     .inbox-item {
-        flex-wrap: wrap; 
+        flex-wrap: wrap; /* Allow items to wrap if needed */
         gap: 8px;
     }
 }
